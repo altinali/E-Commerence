@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerence</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header  -->
+
+    <header>
+      <h1>E-Commerence</h1>
+      <input type="text" placeholder="Lütfen Ürün Girin" />
+
+      <div>
+        <button id="basket">Sepet</button>
+        <button>Kayıt Ol</button>
+        <button>Giriş</button>
+      </div>
+    </header>
+
+    <!-- main -->
+
+    <main>
+      <!-- kategoriler -->
+      <section class="category-sec">
+        <h1>Katagoriler</h1>
+        <div class="categories"></div>
+      </section>
+      <!-- ürünler -->
+      <section>
+        <h1>ürünler</h1>
+        <div class="products"></div>
+      </section>
+    </main>
+
+    <!--Sepet-->
+    <div class="modal-wrapper">
+      <div class="modal">
+        <div id="icon">
+          <img id="close" src="/images/e-close.png" />
+        </div>
+        <div id="list"></div>
+        <p id="total">
+          <span id="count">0 ürün</span> Toplam:
+          <span id="total-price">0</span> &#8378;
+        </p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
